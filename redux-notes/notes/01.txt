@@ -1,0 +1,42 @@
+## Redux 
+
+#Introduction
+
+1. Redux : An App level state container for JS Apps.
+2. React-redux : A library to connect our react app to the redux library.
+3. React-toolkit : A library for efficient redux development.
+
+# Dependencies to Install
+1. npm i redux
+
+# Core concepts in redux
+1. Store : Holds the state of our app.
+2. Action : Describes what happened, the only way our app interacts with the store.
+3. Reducer : Handles the action and decides how to update the state.
+
+# Three priciples
+1. Global state of our app is stored as an object inside a single store.
+2. The only way to change the state is to dispatch an action, an object that describes what happened.
+3. Specifies how state tree is updated based on actions, write pure reducers.
+
+-Pure reducers
+1. These are pure function (function that takes an input and returns some output based on that input).
+Note : Reducer does not modifies the old state, rather it returns an updated new state.
+
+-----------------------------------------------------------------------------------------------------
+
+# Action
+- Only way our app interacts with the store.
+- describes what happened in our app.
+- is a plain JS Object, must have a type property with a value as string constant.
+
+# Action creater
+- A function that returns an action.
+
+-----------------------------------------------------------------------------------------------------
+
+# Reducers
+- Describes how the state changes in response to the actions.
+- It is a function that accpets prevState and action as an argument and returns a new state based on the action.
+
+-----------------------------------------------------------------------------------------------------
